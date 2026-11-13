@@ -3,12 +3,6 @@
 Validation-Locked Missingness-Conditioned Fusion (VLMF) for intrusion detection
 with incomplete network-flow telemetry.
 
-This repository is the code used for the experiments reported in:
-
-> Xie, X., Li, F., and Qin, K. Validation-Locked Policy Selection for Intrusion
-> Detection with Incomplete Network-Flow Telemetry. *Scientific Reports*, under
-> review.
-
 VLMF keeps two fitted predictors fixed, an XGBoost model and a schema-aware
 neural predictor (SchemaFlow), and selects on a validation partition how their
 probabilities are combined for each declared field-loss condition. The selected
