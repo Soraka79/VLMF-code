@@ -1,0 +1,47 @@
+workflow: pretrain
+experiment:
+  name: schemaflow-nf-unsw-nf-cse-pretrain-pilot
+  output_root: /root/autodl-tmp/Res-AE-Attn/results
+  seed: 19
+  enforce_autodl_data_disk: true
+schema:
+  version: schemaflow-multisource-model-41-v1
+runtime:
+  device: cuda
+  execution: train
+data:
+  dataset_id: SchemaFlow-MultiSource-UNSW-CSE-v1
+  data_manifest: /root/autodl-tmp/Res-AE-Attn/repository/manifests/pretraining/NF-UNSW-NF-CSE-v1.json
+  sources:
+    - dataset_id: NF-UNSW-NB15-v2
+      split_dir: /root/autodl-tmp/Res-AE-Attn/data/splits/NF-UNSW-NB15-v2/development-conflict-free-core-100k-seed42-91bec69
+      preprocessor_dir: /root/autodl-tmp/Res-AE-Attn/data/processed/NF-UNSW-NB15-v2/development-train-only-preprocessor-d3e0749
+      data_manifest: /root/autodl-tmp/Res-AE-Attn/data/manifests/NF-UNSW-NB15-v2.source.json
+    - dataset_id: NF-CSE-CIC-IDS2018-v2
+      split_dir: /root/autodl-tmp/Res-AE-Attn/data/splits/NF-CSE-CIC-IDS2018-v2/development-conflict-free-core-100k-seed42-803c0de-v2-native-proportional
+      preprocessor_dir: /root/autodl-tmp/Res-AE-Attn/data/preprocessing/NF-CSE-CIC-IDS2018-v2/train-only-100k-seed42-f89744d
+      data_manifest: /root/autodl-tmp/Res-AE-Attn/repository/manifests/datasets/NF-CSE-CIC-IDS2018-v2.source.json
+model:
+  name: schemaflow_fm_pretrainer
+  d_model: 128
+  nhead: 8
+  num_layers: 6
+  dim_feedforward: 512
+  dropout: 0.1
+  adapter_dim: 32
+training:
+  epochs: 1
+  batch_size: 256
+  learning_rate: 0.0003
+  weight_decay: 0.01
+  gradient_clip: 1.0
+  scheduler_gamma: 0.95
+  shuffle: true
+  class_balance: none
+  mask_fraction: 0.3
+  schema_corruption_fraction: 0.1
+  contrastive_temperature: 0.1
+  loss_weights:
+    binary: 1.0
+    coarse: 1.0
+    native: 1.0

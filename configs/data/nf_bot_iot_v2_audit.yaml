@@ -1,0 +1,17 @@
+dataset_id: NF-BoT-IoT-v2
+raw_csv: /root/autodl-tmp/Res-AE-Attn/data/raw/befb58edf3428167_MOHANAD_A4706/data/NF-BoT-IoT-v2.csv
+source_manifest: /root/autodl-tmp/Res-AE-Attn/repository/manifests/datasets/NF-BoT-IoT-v2.source.json
+source_file_id: befb58edf3428167_MOHANAD_A4706/data/NF-BoT-IoT-v2.csv
+schema_version: nf-bot-iot-v2-model-41-v1
+feature_key_namespace: flowfm-feature-key-v1
+binary_label_column: Label
+native_label_column: Attack
+coarse_label_mapping_version: nf-bot-iot-v2-label-space-v1
+coarse_label_map:
+  Benign: benign
+  DDoS: dos
+  DoS: dos
+  Reconnaissance: scan
+  Theft: malware
+sensitive_hash_namespace: flowfm-sensitive-bot-v1
+max_examples: 5

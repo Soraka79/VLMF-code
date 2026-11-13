@@ -1,0 +1,29 @@
+# Python cache and local environment artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+env/
+
+# Experiment outputs
+results/
+smoke_test_outputs/
+dataset_backups/
+*.log
+
+# Generated dataset artifacts
+*_label_encoder.npy
+
+# Raw datasets and large local files
+*.csv
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
+
+# OS/editor noise
+.DS_Store
+Thumbs.db

@@ -1,0 +1,6 @@
+# Optional experiments are intentionally not installed for the core scope.
+# Add fixed versions only after the corresponding experiment is approved.
+# lightgbm
+# mamba-ssm
+# transformers
+# accelerate

@@ -1,0 +1,8 @@
+# Validated on AutoDL Python 3.10.8 / CUDA runtime 11.8.
+# Torch is inherited from the cloned base environment and must not be reinstalled.
+torch==2.1.2+cu118
+numpy==1.26.4
+PyYAML==6.0.1
+pyarrow==17.0.0
+matplotlib==3.9.0
+torchvision==0.16.2+cu118

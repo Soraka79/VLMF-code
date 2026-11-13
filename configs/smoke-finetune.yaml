@@ -1,0 +1,10 @@
+workflow: finetune
+experiment:
+  name: schemaflow-smoke
+  output_root: /root/autodl-tmp/Res-AE-Attn/results
+  seed: 42
+  enforce_autodl_data_disk: true
+schema:
+  version: phase1-v1
+runtime:
+  device: auto

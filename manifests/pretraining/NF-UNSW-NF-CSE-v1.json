@@ -1,0 +1,22 @@
+{
+  "dataset_id": "SchemaFlow-MultiSource-UNSW-CSE-v1",
+  "format_version": 1,
+  "fit_scope": "source_train_only",
+  "held_out_target": "NF-ToN-IoT-v2",
+  "purpose": "single-seed corrective pretraining pilot",
+  "sources": [
+    {
+      "dataset_id": "NF-UNSW-NB15-v2",
+      "manifest_path": "/root/autodl-tmp/Res-AE-Attn/data/manifests/NF-UNSW-NB15-v2.source.json",
+      "split_role": "train_only"
+    },
+    {
+      "dataset_id": "NF-CSE-CIC-IDS2018-v2",
+      "manifest_path": "/root/autodl-tmp/Res-AE-Attn/repository/manifests/datasets/NF-CSE-CIC-IDS2018-v2.source.json",
+      "split_role": "train_only"
+    }
+  ],
+  "target_data_used": false,
+  "uses_validation_or_test": false,
+  "vocabulary_fit_scope": "source_train_only"
+}

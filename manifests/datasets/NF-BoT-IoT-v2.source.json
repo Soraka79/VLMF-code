@@ -1,0 +1,68 @@
+{
+  "access_date": "2026-07-22",
+  "access_type": "OPEN",
+  "acquisition_provenance": {
+    "direct_binary_retrieval_url_recorded": false,
+    "limitation": "The official UQ BagIt archive was present on the AutoDL data disk when this milestone was finalized; the direct binary retrieval URL was not retained and is not inferred.",
+    "official_record_url": "https://espace.library.uq.edu.au/view/UQ:ec73920"
+  },
+  "archive": {
+    "bytes": 459343850,
+    "content_type": "application/zip",
+    "filename": "befb58edf3428167_MOHANAD_A4706.zip",
+    "sha256": "8208d46a22363368cc118e6a19bf7db235d22e6d48c38b337a86087802cb3342",
+    "zip_integrity": "verified_no_errors"
+  },
+  "bag": {
+    "csv": {
+      "bytes": 6047295296,
+      "columns": 45,
+      "label_columns": ["Label", "Attack"],
+      "netflow_features": 43,
+      "relative_path": "befb58edf3428167_MOHANAD_A4706/data/NF-BoT-IoT-v2.csv",
+      "rows_excluding_header": 37763497,
+      "sha1": "cddcc616a032f55a6a5ab3e382093636449653d6",
+      "sha256": null
+    },
+    "external_identifier": "befb58edf3428167_MOHANAD_A4706",
+    "feature_dictionary": {
+      "relative_path": "befb58edf3428167_MOHANAD_A4706/data/NetFlow_v2_Features.csv",
+      "sha1": "6cf84d2d76c29321175d9429996d7cda2f3b15d6"
+    },
+    "payload_manifest_verified": true,
+    "source_organization": "University of Queensland",
+    "tag_manifest_verified": true,
+    "uncompressed_bytes": null
+  },
+  "citation": {
+    "authors": ["Mohanad Sarhan", "Siamak Layeghy", "Marius Portmann"],
+    "dataset_doi": "10.48610/ec73920",
+    "paper_doi": "10.1007/s11036-021-01843-0",
+    "title": "Towards a Standard Feature Set for Network Intrusion Detection System Datasets"
+  },
+  "dataset_id": "NF-BoT-IoT-v2",
+  "label_counts": {
+    "binary": {"attack": 37628460, "benign": 135037},
+    "native_attack": {
+      "Benign": 135037,
+      "DDoS": 18331847,
+      "DoS": 16673183,
+      "Reconnaissance": 2620999,
+      "Theft": 2431
+    }
+  },
+  "license": {
+    "academic_use": "Granted in perpetuity after citing the dataset paper",
+    "commercial_use": "Requires agreement with the authors",
+    "name": "UQ General Usage Terms and Conditions for data publishing in eSpace",
+    "terms_url": "https://guides.library.uq.edu.au/deposit_your_data/terms_and_conditions"
+  },
+  "official_integrity": {
+    "csv_sha1_equal_to_bagit_manifest": true,
+    "result": "official_uq_bagit_payload_verified"
+  },
+  "publisher": "The University of Queensland",
+  "record_url": "https://espace.library.uq.edu.au/view/UQ:ec73920",
+  "status": "official_uq_bagit_verified",
+  "version": "v2-full"
+}

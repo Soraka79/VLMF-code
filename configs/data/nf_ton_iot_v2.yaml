@@ -1,0 +1,22 @@
+binary_label_column: Label
+coarse_label_map:
+  Benign: benign
+  backdoor: backdoor
+  ddos: dos
+  dos: dos
+  injection: exploit
+  mitm: exploit
+  password: brute_force
+  ransomware: malware
+  scanning: scan
+  xss: exploit
+coarse_label_mapping_version: nf-ton-iot-v2-coarse-v1
+dataset_id: NF-ToN-IoT-v2
+feature_key_namespace: flowfm-feature-key-v1
+max_examples: 20
+native_label_column: Attack
+raw_csv: /root/autodl-tmp/Res-AE-Attn/data/raw/9bafce9d380588c2_MOHANAD_A4706/data/NF-ToN-IoT-v2.csv
+schema_version: nf-ton-iot-v2-model-41-v1
+sensitive_hash_namespace: flowfm-nf-ton-iot-v2-sensitive-v1
+source_file_id: NF-ToN-IoT-v2.csv
+source_manifest: /root/autodl-tmp/Res-AE-Attn/repository/manifests/datasets/NF-ToN-IoT-v2.source.json

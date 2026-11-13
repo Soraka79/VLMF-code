@@ -1,0 +1,37 @@
+workflow: finetune
+experiment:
+  name: schemaflow-nf-ton-cross-domain-pilot
+  output_root: /root/autodl-tmp/Res-AE-Attn/results
+  seed: 17
+  enforce_autodl_data_disk: true
+schema:
+  version: nf-ton-iot-v2-model-41-v1
+runtime:
+  device: cuda
+  execution: train
+data:
+  dataset_id: NF-ToN-IoT-v2
+  split_dir: /root/autodl-tmp/Res-AE-Attn/data/splits/NF-ToN-IoT-v2/development-conflict-free-core-100k-seed42-0c00880
+  preprocessor_dir: /root/autodl-tmp/Res-AE-Attn/data/preprocessing/NF-ToN-IoT-v2/train-only-100k-seed42-01154fc
+  data_manifest: /root/autodl-tmp/Res-AE-Attn/repository/manifests/datasets/NF-ToN-IoT-v2.source.json
+model:
+  name: schemaflow_fm_supervised
+  d_model: 128
+  nhead: 8
+  num_layers: 6
+  dim_feedforward: 512
+  dropout: 0.1
+  adapter_dim: 32
+training:
+  epochs: 1
+  batch_size: 256
+  learning_rate: 0.0003
+  weight_decay: 0.01
+  gradient_clip: 1.0
+  scheduler_gamma: 0.95
+  shuffle: true
+  class_balance: inverse_frequency
+  loss_weights:
+    binary: 1.0
+    coarse: 1.0
+    native: 1.0

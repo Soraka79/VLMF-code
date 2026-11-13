@@ -1,0 +1,27 @@
+binary_label_column: Label
+coarse_label_map:
+  Benign: benign
+  Bot: botnet
+  Brute Force -Web: brute_force
+  Brute Force -XSS: brute_force
+  DDOS attack-HOIC: dos
+  DDOS attack-LOIC-UDP: dos
+  DDoS attacks-LOIC-HTTP: dos
+  DoS attacks-GoldenEye: dos
+  DoS attacks-Hulk: dos
+  DoS attacks-SlowHTTPTest: dos
+  DoS attacks-Slowloris: dos
+  FTP-BruteForce: brute_force
+  Infilteration: exploit
+  SQL Injection: exploit
+  SSH-Bruteforce: brute_force
+coarse_label_mapping_version: nf-cse-cic-ids2018-v2-coarse-v1
+dataset_id: NF-CSE-CIC-IDS2018-v2
+feature_key_namespace: flowfm-feature-key-v1
+max_examples: 20
+native_label_column: Attack
+raw_csv: /root/autodl-tmp/Res-AE-Attn/data/raw/b3427ed8ad063a09_MOHANAD_A4706/data/NF-CSE-CIC-IDS2018-v2.csv
+schema_version: nf-cse-cic-ids2018-v2-model-41-v1
+sensitive_hash_namespace: flowfm-nf-cse-cic-ids2018-v2-sensitive-v1
+source_file_id: NF-CSE-CIC-IDS2018-v2.csv
+source_manifest: /root/autodl-tmp/Res-AE-Attn/repository/manifests/datasets/NF-CSE-CIC-IDS2018-v2.source.json

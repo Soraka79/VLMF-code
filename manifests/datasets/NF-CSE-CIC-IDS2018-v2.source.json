@@ -1,0 +1,89 @@
+{
+  "access_date": "2026-07-22",
+  "access_type": "OPEN",
+  "acquisition_provenance": {
+    "direct_binary_retrieval_url_recorded": false,
+    "limitation": "The official UQ BagIt archive was present on the AutoDL data disk when this milestone was finalized; the direct binary retrieval URL was not retained and is not inferred.",
+    "official_record_url": "https://espace.library.uq.edu.au/view/UQ:e9636b7"
+  },
+  "archive": {
+    "bytes": 612059380,
+    "content_type": "application/zip",
+    "filename": "b3427ed8ad063a09_MOHANAD_A4706.zip",
+    "sha256": "ad6307995d08ff8825d0193d5a1cfa61cf3dc4c6f223962ba3762a7775b5dc24",
+    "zip_integrity": "verified_no_errors"
+  },
+  "bag": {
+    "bagging_date": "2023-05-11",
+    "csv": {
+      "bytes": 3221378977,
+      "columns": 45,
+      "label_columns": [
+        "Label",
+        "Attack"
+      ],
+      "netflow_features": 43,
+      "relative_path": "b3427ed8ad063a09_MOHANAD_A4706/data/NF-CSE-CIC-IDS2018-v2.csv",
+      "rows_excluding_header": 18893708,
+      "sha1": "80ff7fd07e2bc31164197f07fe9d9606ee565f9a",
+      "sha256": "16a545a3e139b2e85d08b1b7d9d40328c3689a49d0deaafce6dcf8d7b63e1257"
+    },
+    "external_identifier": "b3427ed8ad063a09_MOHANAD_A4706",
+    "feature_dictionary": {
+      "relative_path": "b3427ed8ad063a09_MOHANAD_A4706/data/NetFlow_v2_Features.csv",
+      "sha1": "6cf84d2d76c29321175d9429996d7cda2f3b15d6"
+    },
+    "payload_manifest_verified": true,
+    "source_organization": "University of Queensland",
+    "tag_manifest_verified": true,
+    "uncompressed_bytes": 3221382412
+  },
+  "citation": {
+    "authors": [
+      "Mohanad Sarhan",
+      "Siamak Layeghy",
+      "Marius Portmann"
+    ],
+    "dataset_doi": "10.48610/e9636b7",
+    "paper_doi": "10.1007/s11036-021-01843-0",
+    "title": "Towards a Standard Feature Set for Network Intrusion Detection System Datasets"
+  },
+  "dataset_id": "NF-CSE-CIC-IDS2018-v2",
+  "label_counts": {
+    "binary": {
+      "attack": 2258141,
+      "benign": 16635567
+    },
+    "native_attack": {
+      "Benign": 16635567,
+      "Bot": 143097,
+      "Brute Force -Web": 2143,
+      "Brute Force -XSS": 927,
+      "DDOS attack-HOIC": 1080858,
+      "DDOS attack-LOIC-UDP": 2112,
+      "DDoS attacks-LOIC-HTTP": 307300,
+      "DoS attacks-GoldenEye": 27723,
+      "DoS attacks-Hulk": 432648,
+      "DoS attacks-SlowHTTPTest": 14116,
+      "DoS attacks-Slowloris": 9512,
+      "FTP-BruteForce": 25933,
+      "Infilteration": 116361,
+      "SQL Injection": 432,
+      "SSH-Bruteforce": 94979
+    }
+  },
+  "license": {
+    "academic_use": "Granted in perpetuity after citing the dataset paper",
+    "commercial_use": "Requires agreement with the authors",
+    "name": "UQ General Usage Terms and Conditions for data publishing in eSpace",
+    "terms_url": "https://guides.library.uq.edu.au/deposit_your_data/terms_and_conditions"
+  },
+  "official_integrity": {
+    "csv_sha1_equal_to_bagit_manifest": true,
+    "result": "official_uq_bagit_payload_verified"
+  },
+  "publisher": "The University of Queensland",
+  "record_url": "https://espace.library.uq.edu.au/view/UQ:e9636b7",
+  "status": "official_uq_bagit_verified",
+  "version": "v2-full"
+}

@@ -1,0 +1,72 @@
+{
+  "access_date": "2026-07-20",
+  "access_type": "OPEN",
+  "archive": {
+    "bytes": 33877423,
+    "content_type": "application/zip",
+    "filename": "NF-UNSW-NB15-v2.uq-rdm.zip",
+    "last_modified": "2023-05-15T01:35:58Z",
+    "resume_supported": true,
+    "s3_etag": "fa748fdbb2687734f66f193caaf90e9a-7",
+    "sha256": "0e42c11dc9799a1e0851ff0b98c2ed1b47c56331a6eb99ba14c800cfe94d03ed"
+  },
+  "bag": {
+    "bagging_date": "2023-05-11",
+    "csv": {
+      "bytes": 441867785,
+      "columns": 45,
+      "label_columns": [
+        "Label",
+        "Attack"
+      ],
+      "netflow_features": 43,
+      "relative_path": "fe6cb615d161452c_MOHANAD_A4706/data/NF-UNSW-NB15-v2.csv",
+      "rows_excluding_header": 2390275,
+      "sha1": "dde9a9e38009ec60121cbb4fd884bf2c7cf5c0b0"
+    },
+    "external_identifier": "fe6cb615d161452c_MOHANAD_A4706",
+    "feature_dictionary": {
+      "relative_path": "fe6cb615d161452c_MOHANAD_A4706/data/NetFlow_v2_Features.csv",
+      "sha1": "6cf84d2d76c29321175d9429996d7cda2f3b15d6"
+    },
+    "uncompressed_bytes": 441871214
+  },
+  "citation": {
+    "authors": [
+      "Mohanad Sarhan",
+      "Siamak Layeghy",
+      "Marius Portmann"
+    ],
+    "doi": "10.1007/s11036-021-01843-0",
+    "title": "Towards a Standard Feature Set for Network Intrusion Detection System Datasets"
+  },
+  "dataset_id": "NF-UNSW-NB15-v2",
+  "label_counts": {
+    "binary": {
+      "attack": 95053,
+      "benign": 2295222
+    },
+    "native_attack": {
+      "Analysis": 2299,
+      "Backdoor": 2169,
+      "DoS": 5794,
+      "Exploits": 31551,
+      "Fuzzers": 22310,
+      "Generic": 16560,
+      "Reconnaissance": 12779,
+      "Shellcode": 1427,
+      "Worms": 164
+    }
+  },
+  "license": {
+    "academic_use": "Granted in perpetuity after citing the dataset paper",
+    "commercial_use": "Requires agreement with the authors",
+    "name": "Permitted Re-Use with Commercial Use Restriction"
+  },
+  "network_note": "AutoDL system DNS did not resolve the official Sydney S3 host correctly; download used curl --resolve with AWS-published ap-southeast-2 S3 IP 16.12.74.1 while preserving the signed Host.",
+  "official_page": "https://staff.itee.uq.edu.au/marius/NIDS_datasets/",
+  "publisher": "The University of Queensland",
+  "rdm_file_page": "https://rdm.uq.edu.au/files/8c6e2a00-ef9c-11ed-827d-e762de186848",
+  "rdm_uuid": "8c6e2a00-ef9c-11ed-827d-e762de186848",
+  "version": "v2-full"
+}

@@ -1,0 +1,9 @@
+audit_config: /root/autodl-tmp/Res-AE-Attn/repository/configs/data/nf_unsw_nb15_v2.yaml
+audit_report_dir: /root/autodl-tmp/Res-AE-Attn/reports/data_audit/NF-UNSW-NB15-v2/model-41-v1-e20be31
+max_samples: 100000
+ratios:
+  test: 0.2
+  train: 0.6
+  val: 0.2
+seed: 42
+view: conflict_free_core

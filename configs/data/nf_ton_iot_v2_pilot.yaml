@@ -1,0 +1,10 @@
+audit_config: /root/autodl-tmp/Res-AE-Attn/repository/configs/data/nf_ton_iot_v2.yaml
+audit_report_dir: /root/autodl-tmp/Res-AE-Attn/reports/data_audit/NF-ToN-IoT-v2/nf-ton-iot-v2-model-41-v1-7ed0e56
+max_samples: 100000
+ratios:
+  test: 0.2
+  train: 0.6
+  val: 0.2
+seed: 42
+selection_policy: native_proportional
+view: conflict_free_core

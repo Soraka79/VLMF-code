@@ -1,0 +1,10 @@
+audit_config: /root/autodl-tmp/Res-AE-Attn/repository/configs/data/nf_cse_cic_ids2018_v2.yaml
+audit_report_dir: /root/autodl-tmp/Res-AE-Attn/reports/data_audit/NF-CSE-CIC-IDS2018-v2/nf-cse-cic-ids2018-v2-model-41-v1-61a3179
+max_samples: 100000
+ratios:
+  test: 0.2
+  train: 0.6
+  val: 0.2
+seed: 42
+selection_policy: native_proportional
+view: conflict_free_core

@@ -1,0 +1,3 @@
+-r requirements-core.txt
+-r requirements-baselines.txt
+-r requirements-dev.txt

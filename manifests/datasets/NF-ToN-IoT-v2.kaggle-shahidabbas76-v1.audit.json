@@ -1,0 +1,149 @@
+{
+  "acquisition": {
+    "accessed_at": "2026-07-22T00:11:01+08:00",
+    "dataset_ref": "shahidabbas76/nf-ton-iot-v2-full-dataset",
+    "dataset_url": "https://www.kaggle.com/datasets/shahidabbas76/nf-ton-iot-v2-full-dataset",
+    "download_url": "https://www.kaggle.com/api/v1/datasets/download/shahidabbas76/nf-ton-iot-v2-full-dataset",
+    "license_name": "Other (specified in description)",
+    "local_path": "/root/autodl-tmp/Res-AE-Attn/data/raw/NF-ToN-IoT-v2/kaggle-shahidabbas76-v1.zip",
+    "provider": "Kaggle",
+    "published_at": "2025-02-25T12:10:18.733Z",
+    "publisher_account": "Shahidabbas76",
+    "version": 1
+  },
+  "archive": {
+    "compressed_bytes": 186001679,
+    "member_count": 1,
+    "members": [
+      {
+        "crc32": "f346c878",
+        "name": "NF-ToN-IoT-v2.csv",
+        "uncompressed_bytes": 2676491000
+      }
+    ],
+    "sha256": "bd9c481cd398cd54e5553bb71a00413e784eaddccf497a84386aa47793952c55",
+    "zip_integrity": "ok"
+  },
+  "audited_at": "2026-07-22T00:32:39+08:00",
+  "cross_checks": [
+    {
+      "result": "row count, 43-feature schema, dataset identity, and size envelope match",
+      "source": "Sarhan et al. standard NetFlow dataset paper and UQ DOI metadata"
+    },
+    {
+      "artifacts": {
+        "preprocessing_notebook_sha256": "d52d2a99bc5e13833eeb642db504819c125b868cd5092b3b9fcde4398a37140f",
+        "training_notebook_sha256": "052c92db39950c785babf878d9aaa861c42c3098188470ee770f2d355cdfae05"
+      },
+      "result": "independently shows the same raw 45-column layout and ten Attack labels, but its public training artifacts are subsequently preprocessed and do not independently freeze the full 16,940,496-row distribution",
+      "source": "https://github.com/javierreansyah/NF-ToN-IoT-v2-TabNet"
+    },
+    {
+      "result": "explicitly cleaned/deduplicated parquet with 13,135,881 rows and 43 columns; rejected as a formal raw mirror",
+      "source": "Kaggle dhoogla/nftoniotv2 version 2"
+    }
+  ],
+  "csv_audit": {
+    "attack_label_counts": {
+      "Benign": 6099469,
+      "backdoor": 16809,
+      "ddos": 2026234,
+      "dos": 712609,
+      "injection": 684465,
+      "mitm": 7723,
+      "password": 1153323,
+      "ransomware": 3425,
+      "scanning": 3781419,
+      "xss": 2455020
+    },
+    "binary_label_counts": {
+      "0": 6099469,
+      "1": 10841027
+    },
+    "column_count": 45,
+    "columns": [
+      "IPV4_SRC_ADDR",
+      "L4_SRC_PORT",
+      "IPV4_DST_ADDR",
+      "L4_DST_PORT",
+      "PROTOCOL",
+      "L7_PROTO",
+      "IN_BYTES",
+      "IN_PKTS",
+      "OUT_BYTES",
+      "OUT_PKTS",
+      "TCP_FLAGS",
+      "CLIENT_TCP_FLAGS",
+      "SERVER_TCP_FLAGS",
+      "FLOW_DURATION_MILLISECONDS",
+      "DURATION_IN",
+      "DURATION_OUT",
+      "MIN_TTL",
+      "MAX_TTL",
+      "LONGEST_FLOW_PKT",
+      "SHORTEST_FLOW_PKT",
+      "MIN_IP_PKT_LEN",
+      "MAX_IP_PKT_LEN",
+      "SRC_TO_DST_SECOND_BYTES",
+      "DST_TO_SRC_SECOND_BYTES",
+      "RETRANSMITTED_IN_BYTES",
+      "RETRANSMITTED_IN_PKTS",
+      "RETRANSMITTED_OUT_BYTES",
+      "RETRANSMITTED_OUT_PKTS",
+      "SRC_TO_DST_AVG_THROUGHPUT",
+      "DST_TO_SRC_AVG_THROUGHPUT",
+      "NUM_PKTS_UP_TO_128_BYTES",
+      "NUM_PKTS_128_TO_256_BYTES",
+      "NUM_PKTS_256_TO_512_BYTES",
+      "NUM_PKTS_512_TO_1024_BYTES",
+      "NUM_PKTS_1024_TO_1514_BYTES",
+      "TCP_WIN_MAX_IN",
+      "TCP_WIN_MAX_OUT",
+      "ICMP_TYPE",
+      "ICMP_IPV4_TYPE",
+      "DNS_QUERY_ID",
+      "DNS_QUERY_TYPE",
+      "DNS_TTL_ANSWER",
+      "FTP_COMMAND_RET_CODE",
+      "Label",
+      "Attack"
+    ],
+    "data_rows": 16940496,
+    "expected_column_order_match": true,
+    "malformed_width_rows": 0,
+    "member_name": "NF-ToN-IoT-v2.csv",
+    "rows_with_empty_values": 0,
+    "sha256": "7751fb955ca50a2c113ec455eddd39ca23fcfa99eb1ab488c4526c43c2a20081",
+    "uncompressed_bytes": 2676491000,
+    "unexpected_index_columns": []
+  },
+  "dataset_id": "NF-ToN-IoT-v2",
+  "eligibility": {
+    "development_pilot": true,
+    "formal_blocker": "Need official attachment comparison or a second independent raw mirror/source that confirms complete row and label distributions.",
+    "formal_paper_experiments": false,
+    "quarantine_on_mismatch": true,
+    "smoke_test": true
+  },
+  "format_version": 1,
+  "hash_caveat": "UQ does not currently publish a SHA256 accessible from this environment. These SHA256 values prove stability of this acquisition only and do not establish byte-for-byte identity with the official attachment.",
+  "mutation_checks": {
+    "added_index_column": false,
+    "deduplication_or_dtype_reencoding": "not provable without official bytes or a second complete raw distribution source",
+    "deleted_or_reordered_columns": false,
+    "empty_value_injection": false,
+    "malformed_rows": false,
+    "row_sampling_against_official_total": false
+  },
+  "official_identity": {
+    "attachment_url_referenced_by_mirror": "https://rdm.uq.edu.au/files/a4ad7080-ef9c-11ed-a964-b70596e96ad5",
+    "declared_row_count": 16940496,
+    "declared_schema": "43 extended NetFlow features plus Label and Attack",
+    "declared_size": "160MB zipped, 2.5GB",
+    "doi": "10.48610/38a2d07",
+    "license_summary": "Academic research permitted in perpetuity after citation; commercial use requires author agreement",
+    "publisher": "The University of Queensland",
+    "record_url": "https://espace.library.uq.edu.au/view/UQ:38a2d07"
+  },
+  "status": "verified_for_smoke_and_pilot_pending_independent_full_distribution_crosscheck"
+}

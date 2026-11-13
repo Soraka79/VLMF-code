@@ -1,0 +1,88 @@
+{
+  "access_date": "2026-07-22",
+  "access_type": "OPEN",
+  "acquisition_provenance": {
+    "direct_binary_retrieval_url_recorded": false,
+    "limitation": "The official UQ BagIt archive was already present on the AutoDL data disk when this continuation audited it; the direct binary retrieval URL was not present in shell history and is not inferred.",
+    "official_record_url": "https://espace.library.uq.edu.au/view/UQ:38a2d07",
+    "rdm_file_page": "https://rdm.uq.edu.au/files/a4ad7080-ef9c-11ed-a964-b70596e96ad5"
+  },
+  "archive": {
+    "bytes": 168120179,
+    "content_type": "application/zip",
+    "filename": "9bafce9d380588c2_MOHANAD_A4706.zip",
+    "sha256": "69dd3b8bd59e23f0718dfc69b2757cb6ca08fe2c4c1d4fd126b8bbd204bbbad2",
+    "zip_integrity": "verified_no_errors"
+  },
+  "bag": {
+    "bagging_date": "2023-05-11",
+    "csv": {
+      "bytes": 2676491000,
+      "columns": 45,
+      "label_columns": [
+        "Label",
+        "Attack"
+      ],
+      "netflow_features": 43,
+      "relative_path": "9bafce9d380588c2_MOHANAD_A4706/data/NF-ToN-IoT-v2.csv",
+      "rows_excluding_header": 16940496,
+      "sha1": "c0e014512c9a825146c52982d3cf12d3fce1ccc9",
+      "sha256": "7751fb955ca50a2c113ec455eddd39ca23fcfa99eb1ab488c4526c43c2a20081"
+    },
+    "external_identifier": "9bafce9d380588c2_MOHANAD_A4706",
+    "feature_dictionary": {
+      "relative_path": "9bafce9d380588c2_MOHANAD_A4706/data/NetFlow_v2_Features.csv",
+      "sha1": "6cf84d2d76c29321175d9429996d7cda2f3b15d6"
+    },
+    "payload_manifest_verified": true,
+    "source_organization": "University of Queensland",
+    "tag_manifest_verified": true,
+    "uncompressed_bytes": 2676494427
+  },
+  "citation": {
+    "authors": [
+      "Mohanad Sarhan",
+      "Siamak Layeghy",
+      "Marius Portmann"
+    ],
+    "dataset_doi": "10.48610/38a2d07",
+    "paper_doi": "10.1007/s11036-021-01843-0",
+    "title": "Towards a Standard Feature Set for Network Intrusion Detection System Datasets"
+  },
+  "dataset_id": "NF-ToN-IoT-v2",
+  "label_counts": {
+    "binary": {
+      "attack": 10841027,
+      "benign": 6099469
+    },
+    "native_attack": {
+      "backdoor": 16809,
+      "ddos": 2026234,
+      "dos": 712609,
+      "injection": 684465,
+      "mitm": 7723,
+      "password": 1153323,
+      "ransomware": 3425,
+      "scanning": 3781419,
+      "xss": 2455020
+    }
+  },
+  "license": {
+    "academic_use": "Granted in perpetuity after citing the dataset paper",
+    "commercial_use": "Requires agreement with the authors",
+    "name": "UQ General Usage Terms and Conditions for data publishing in eSpace",
+    "terms_url": "https://guides.library.uq.edu.au/deposit_your_data/terms_and_conditions"
+  },
+  "mirror_equivalence": {
+    "candidate_dataset_ref": "shahidabbas76/nf-ton-iot-v2-full-dataset",
+    "candidate_provider": "Kaggle",
+    "candidate_version": 1,
+    "csv_sha256_equal": true,
+    "official_csv_sha256": "7751fb955ca50a2c113ec455eddd39ca23fcfa99eb1ab488c4526c43c2a20081",
+    "result": "byte_identical_to_official_uq_bagit_csv"
+  },
+  "publisher": "The University of Queensland",
+  "rdm_file_page": "https://rdm.uq.edu.au/files/a4ad7080-ef9c-11ed-a964-b70596e96ad5",
+  "rdm_uuid": "a4ad7080-ef9c-11ed-a964-b70596e96ad5",
+  "version": "v2-full"
+}

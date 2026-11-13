@@ -1,0 +1,22 @@
+binary_label_column: Label
+coarse_label_map:
+  Analysis: exploit
+  Backdoor: backdoor
+  Benign: benign
+  DoS: dos
+  Exploits: exploit
+  Fuzzers: exploit
+  Generic: exploit
+  Reconnaissance: scan
+  Shellcode: exploit
+  Worms: malware
+coarse_label_mapping_version: nf-unsw-nb15-v2-coarse-v1
+dataset_id: NF-UNSW-NB15-v2
+feature_key_namespace: flowfm-feature-key-v1
+max_examples: 20
+native_label_column: Attack
+raw_csv: /root/autodl-tmp/Res-AE-Attn/data/raw/NF-UNSW-NB15-v2/fe6cb615d161452c_MOHANAD_A4706/data/NF-UNSW-NB15-v2.csv
+schema_version: nf-unsw-nb15-v2-model-41-v1
+sensitive_hash_namespace: flowfm-nf-unsw-nb15-v2-sensitive-v1
+source_file_id: NF-UNSW-NB15-v2.csv
+source_manifest: /root/autodl-tmp/Res-AE-Attn/repository/manifests/datasets/NF-UNSW-NB15-v2.source.json

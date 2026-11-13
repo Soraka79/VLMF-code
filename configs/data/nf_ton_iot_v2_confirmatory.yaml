@@ -1,0 +1,11 @@
+audit_config: /root/autodl-tmp/Res-AE-Attn/repository/configs/data/nf_ton_iot_v2.yaml
+audit_report_dir: /root/autodl-tmp/Res-AE-Attn/reports/data_audit/NF-ToN-IoT-v2/nf-ton-iot-v2-model-41-v1-7ed0e56
+exclusion_split_dirs:
+  - /root/autodl-tmp/Res-AE-Attn/data/splits/NF-ToN-IoT-v2/development-conflict-free-core-100k-seed42-9522823
+  - /root/autodl-tmp/Res-AE-Attn/data/splits/NF-ToN-IoT-v2/development-conflict-free-core-100k-seed42-0c00880
+  - /root/autodl-tmp/Res-AE-Attn/data/splits/NF-ToN-IoT-v2/development-conflict-free-core-100k-seed42-proportional-f4326cf
+  - /root/autodl-tmp/Res-AE-Attn/data/splits/NF-ToN-IoT-v2/few-shot-train-1pct-seed42-from-f4326cf
+max_samples: 500000
+seed: 20260724
+selection_policy: native_proportional_group_safe
+view: conflict_free_core
